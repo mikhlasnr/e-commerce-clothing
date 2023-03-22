@@ -18,7 +18,6 @@ import {
   collection,
   writeBatch,
   query,
-  
 } from "firebase/firestore";
 
 const firebaseConfig = {
@@ -31,7 +30,7 @@ const firebaseConfig = {
   measurementId: "G-HDB4S7J9C4",
 };
 
-const firebaseApp = initializeApp(firebaseConfig);
+export const firebaseApp = initializeApp(firebaseConfig);
 
 const googleProvider = new GoogleAuthProvider();
 
