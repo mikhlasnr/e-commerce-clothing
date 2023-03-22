@@ -4,12 +4,10 @@ import "./directory.styles.scss";
 
 const Directory = ({ categories }) => {
   return (
-    <div className="container-main">
-      <div className="directory-container">
-        {categories.map((category) => (
-          <DirectoryItem key={category.id} category={category} />
-        ))}
-      </div>
+    <div className="directory-container">
+      {categories.map((category) => (
+        <DirectoryItem key={category.id} category={category} />
+      ))}
     </div>
   );
 };
