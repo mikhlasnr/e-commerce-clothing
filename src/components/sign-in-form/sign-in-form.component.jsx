@@ -66,6 +66,7 @@ const SignInForm = () => {
           onChange={handleChange}
           name="password"
           value={password}
+          autoComplete="on"
         />
         <ButtonsContainer>
           <Button type="submit">Sign In</Button>
